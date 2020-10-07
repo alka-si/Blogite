@@ -4,11 +4,12 @@ import Post from '../../components/Post/Post';
 import FullPost from '../../components/FullPost/FullPost';
 import NewPost from '../../components/NewPost/NewPost';
 import './Blog.css';
+import background from '../../assets/images/background.jpg'
 
 class Blog extends Component {
     render () {
         return (
-            <div>
+            <div className='Blog' style={{backgroundImage: `url(${background})`}}>
                 <section className="Posts">
                     <Post />
                     <Post />
